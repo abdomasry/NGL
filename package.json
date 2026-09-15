@@ -10,6 +10,9 @@
     "build": "npm run build --workspace=node-graph-backend",
     "start": "npm run build && npm run start --workspace=node-graph-backend"
   },
+  "dependencies": {
+    "typescript": "^5.7.3"
+  },
   "engines": {
     "node": ">=20"
   }
