@@ -1,0 +1,16 @@
+{
+  "name": "node-graph-editor-deployment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root deployment manifest for the Node Graph Editor backend.",
+  "workspaces": [
+    "NGL/backend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=node-graph-backend",
+    "start": "npm run build && npm run start --workspace=node-graph-backend"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
